@@ -1,10 +1,9 @@
 const total = 100;
-const ordered = prompt("Введите количество товаров в заказе");
-
-let numbOrdered = Number(ordered);
-let totalOrdered;
-
-for (totalOrdered = numbOrdered; totalOrdered < total; totalOrdered += numbOrdered) {
- console.log(totalOrdered);
+let ordered = prompt("Введите количество товаров в заказе");
+ordered =  Number(ordered);
+if (ordered<total){
+    console.log("Заказ оформлен, с вами свяжется менеджер")
 }
-console.log(numbOrdered);
+else {
+console.log("На складе недостаточно твоаров!");
+}
